@@ -164,16 +164,91 @@ section{
     padding-bottom: .5rem;
 }
 
+.see-more{
+    text-align: right;
+    color: #E02C6D;
+    font-size: 2rem;
+}
+
+.arrow{
+    color: #E02C6D;
+    padding-right:3rem ;
+}
+
+/* prodcast section start  */
+
+section{
+    min-height: 70vh;
+}
+
+.prodcast{
+    display: flex;
+    flex-direction: column;
+}
+
+.prodcast h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.prodcast img{
+    width: 54rem;
+    height: 30rem;
+}
+
+/* footer section  */
+
+.last-section{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.last-section h2{
+    font-size: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+.last-section p{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.social-icon{
+    padding-bottom: 3rem;
+}
+
+.social-icon i{
+    font-size: 2rem;
+    padding-right: 1.5rem;
+}
+
+
 /* --------------
   Media queries  
 -----------------*/
 
 /* laptop devices  */
 
+@media only screen and (max-width:1320px){
+    
+    .prodcast img{
+        width: 49rem;
+        height: 30rem;
+    }
+
+}
+
 @media only screen and (max-width:1200px) {
     
     html{
         font-size: 59%;
+    }
+
+    .prodcast img{
+        width: 48rem;
+        height: 30rem;
     }
 
 }
@@ -197,6 +272,10 @@ section{
         background-size: contain;
     }
 
+    .prodcast img{
+        width: 49rem;
+        padding-left: 3rem;
+    }
 }
 
 @media only screen and (max-width:988px) {
@@ -204,6 +283,11 @@ section{
     html{
         /* font-size: 50%; */
         font-size: 47%;
+    }
+
+    .prodcast img{
+        width: 45rem;
+        padding-left: 3rem;
     }
    
 }
@@ -286,12 +370,21 @@ section{
             height: 70%;
            
     }
+
+
 }
+
+
 
 @media only screen and (max-width:700px) {
 
     .box{
         height: 52rem; 
+    }
+
+    .prodcast img{
+        width: 42rem;
+        padding-left: 2rem;
     }
 
 }
@@ -311,6 +404,11 @@ section{
 @media only screen and (max-width:600px){
     .box{
         height: 48rem;
+    }
+
+    .prodcast img{
+        width: 35rem;
+        padding-left: 2.5rem;
     }
 }
 
@@ -385,6 +483,23 @@ section{
         height: 70%;
     }
 
+    .see-more{
+        position: relative;
+        right: 15rem;
+    }
+
+    .prodcast img{
+        width: 45rem;
+        padding-bottom: 2rem;
+    }
+
+    .prodcast-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 @media only screen and (max-width:350px) {
@@ -395,5 +510,10 @@ section{
 
     .box{
         height: 55rem;
+    }
+
+    .see-more{
+        position: relative;
+        right: 10rem;
     }
 }
